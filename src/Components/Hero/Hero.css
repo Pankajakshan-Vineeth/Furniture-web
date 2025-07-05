@@ -1,0 +1,74 @@
+.hero-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #3F6054; 
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.nav-container{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo h1{
+color: white;
+cursor: pointer;
+font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  margin: 35px 0;
+  margin-left: 200px;
+
+}
+.menu a {
+  color: #AEBDB7;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 8px;
+  transition: color 0.5s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+.menu a.active {
+  color: white;
+}
+
+.menu a span {
+  position: absolute;
+  bottom: 0;             
+  left: 0;
+  width: 0;
+  height: 3px;            
+  background: rgb(253, 183, 125); 
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.menu a:hover span {
+  width: 100%;
+}
+
+.icons{
+width: 10%;
+margin-top: 30px;
+justify-content: space-around;
+}
+.icons img{
+       cursor: pointer;
+
+}
+.icon1{
+    margin-right: 40px;
+}
