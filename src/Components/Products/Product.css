@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0 20pzx;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fdfd;
+}
+
+/* Main container */
+.crafted-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+/* Left content block */
+.crafted-content {
+  max-width: 350px;
+}
+
+.crafted-content h1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.crafted-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.crafted-content button {
+  padding: 14px 28px;
+  background-color: #1a1a1a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Products grid */
+.crafted-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+/* Individual product card */
+.product {
+  text-align: center;
+  min-width: 200px;
+  flex: 1;
+}
+
+.product img {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.product .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
