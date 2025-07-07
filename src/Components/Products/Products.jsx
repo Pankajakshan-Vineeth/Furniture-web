@@ -1,7 +1,7 @@
-import  './product.css'
-import product1 from '../../assets/product-1.png'
-import product2 from '../../assets/product-2.png'
-import product3 from '../../assets/product-3.png'
+import "./product.css";
+import product1 from "../../assets/product-1.png";
+import product2 from "../../assets/product-2.png";
+import product3 from "../../assets/product-3.png";
 
 const products = [
   {
@@ -22,26 +22,37 @@ const products = [
 ];
 
 const Products = () => {
-  
   return (
     <section className="crafted-section">
       <div className="crafted-content">
         <h1>
-          Crafted with<br />excellent<br />material.
+          Crafted with
+          <br />
+          excellent
+          <br />
+          material.
         </h1>
         <p>
-          Donec vitae odio quis nisl dapibus<br/> malesuada.
-          Nullam ac aliquet velit.<br />
-          Aliquam vulputate velit imperdiet dolor<br/> tempor tristique.
+          Donec vitae odio quis nisl dapibus
+          <br /> malesuada. Nullam ac aliquet velit.
+          <br />
+          Aliquam vulputate velit imperdiet dolor
+          <br /> tempor tristique.
         </p>
         <button>Explore</button>
       </div>
       <div className="crafted-products">
         {products.map((product, index) => (
           <div className="product" key={index}>
-            <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
-            <p className="price">{product.price}</p>
+            <div className="product-hover-box">
+              <img src={product.image} alt={product.name} />
+              <h3>{product.name}</h3>
+              <p className="price">{product.price}</p>
+
+              <div className="hover-box">
+                <div className="plus-icon">+</div>
+              </div>
+            </div>
           </div>
         ))}
       </div>
