@@ -4,6 +4,7 @@ import Products from '../Components/Products/Products'
 import WhyChooseUs from '../Components/WhyChooseUs/WhyChooseUs'
 import InteriorDesignSection from '../Components/InteriorDesignSection/InteriorDesignSection'
 import Testimonials from '../Components/Testimonials/Testimonials'
+import RecentBlog from '../Components/RecentBlog/RecentBlog'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <WhyChooseUs/>
       <InteriorDesignSection/>
       <Testimonials/>
+      <RecentBlog/>
     </div>
   )
 }
