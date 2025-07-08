@@ -1,8 +1,12 @@
 .recent-blog {
-  max-width: 1200px;
   margin: 3rem auto;
-  padding: 0 1.5rem;
+  padding: 0 4rem;
   font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 150px;
+  padding-top: 70px;
+
+    background-color: #dbdfda79;
+
 }
 
 .recent-blog-header {

@@ -5,6 +5,7 @@ import WhyChooseUs from '../Components/WhyChooseUs/WhyChooseUs'
 import InteriorDesignSection from '../Components/InteriorDesignSection/InteriorDesignSection'
 import Testimonials from '../Components/Testimonials/Testimonials'
 import RecentBlog from '../Components/RecentBlog/RecentBlog'
+import Footer from '../Components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <InteriorDesignSection/>
       <Testimonials/>
       <RecentBlog/>
+      <Footer/>
     </div>
   )
 }
