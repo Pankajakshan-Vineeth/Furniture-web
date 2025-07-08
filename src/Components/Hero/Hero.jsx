@@ -2,7 +2,8 @@ import "./Hero.css";
 import userIcon from "../../assets/user.svg";
 import CartIcon from "../../assets/cart.svg";
 import Couch from "../../assets/couch.png";
-import greenDots from '../../assets/dots-green.svg'
+import greenDots from "../../assets/dots-green.svg";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,24 +15,42 @@ const Hero = () => {
           <h1>Furni.</h1>
         </div>
         <div className="menu">
-          <a href="#" className="active">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <span></span>Home
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink
+            to="/shop"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <span></span>Shop
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <span></span>About Us
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <span></span>Services
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <span></span>Blog
-          </a>
-          <a href="#">
-            <span></span>Contact us
-          </a>
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span></span>Contact Us
+          </NavLink>
         </div>
         <div className="icons">
           <img src={userIcon} alt="" className="icon1" />
@@ -52,8 +71,8 @@ const Hero = () => {
           <button>Explore</button>
         </div>
         <div className="image-container-sofa">
-      <img src={Couch} alt="" className="sofa-image-green" />
-      <img src={greenDots} alt="" className="green-dots" />
+          <img src={Couch} alt="" className="sofa-image-green" />
+          <img src={greenDots} alt="" className="green-dots" />
         </div>
       </div>
     </div>

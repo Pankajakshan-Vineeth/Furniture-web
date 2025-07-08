@@ -1,11 +1,31 @@
-import Home from "./Pages/Home"
+import Footer from "./Components/Footer/Footer";
+import Hero from "./Components/Hero/Hero";
+import Home from "./Pages/Home";
+import Shop from "./Pages/Shop";
+import About from './Pages/About'; // 
+import Services from "./Pages/Services";
+import Blog from "./Pages/Blog";
+import Contact from "./Pages/Contact"; 
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <Home/>
-   </div>
-  )
-}
+      <BrowserRouter>
+        <Hero />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/contact' element={<Contact />} /> 
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
+};
 
-export default App
+export default App;
