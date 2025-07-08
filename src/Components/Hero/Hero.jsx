@@ -51,8 +51,8 @@ const Hero = () => {
           <button>Shop Now</button>
           <button>Explore</button>
         </div>
-        <div className="image-container">
-      <img src={Couch} alt="" className="sofa-image" />
+        <div className="image-container-sofa">
+      <img src={Couch} alt="" className="sofa-image-green" />
       <img src={greenDots} alt="" className="green-dots" />
         </div>
       </div>
