@@ -1,0 +1,60 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import userIcon from "../../assets/user.svg";
+import CartIcon from "../../assets/cart.svg";
+
+const Navigation = () => {
+  return (
+    <div className="nav-main-container">
+      <div className="nav-container">
+        <div className="logo">
+          <h1>Furni.</h1>
+        </div>
+        <div className="menu">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span></span>Home
+          </NavLink>
+          <NavLink
+            to="/shop"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span></span>Shop
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span></span>About Us
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span></span>Services
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span></span>Blog
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <span></span>Contact Us
+          </NavLink>
+        </div>
+        <div className="icons">
+          <img src={userIcon} alt="" className="icon1" />
+          <img src={CartIcon} alt="" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navigation;

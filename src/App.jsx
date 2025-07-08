@@ -1,5 +1,4 @@
 import Footer from "./Components/Footer/Footer";
-import Hero from "./Components/Hero/Hero";
 import Home from "./Pages/Home";
 import Shop from "./Pages/Shop";
 import About from './Pages/About'; // 
@@ -8,12 +7,13 @@ import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact"; 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navigation from "./Components/Navigation/Navigation";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Hero />
+      <Navigation/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
