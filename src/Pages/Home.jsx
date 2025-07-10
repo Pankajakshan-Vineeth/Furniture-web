@@ -8,7 +8,7 @@ import RecentBlog from '../Components/RecentBlog/RecentBlog'
 const Home = () => {
   return (
     <div>
-      <Hero/>
+      <Hero  heading="Modern Interior Design Studio"/>
       <Products/>
       <WhyChooseUs/>
       <InteriorDesignSection/>

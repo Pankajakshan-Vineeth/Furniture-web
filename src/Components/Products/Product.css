@@ -72,6 +72,9 @@ body {
   height: auto;
   margin-bottom: 20px;
 }
+.product img:hover{
+  margin-bottom: -5px;
+}
 
 
 .product h3 {

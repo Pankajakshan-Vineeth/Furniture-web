@@ -1,7 +1,7 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import userIcon from "../../assets/user.svg";
 import CartIcon from "../../assets/cart.svg";
+import './Navigation.css'
 
 const Navigation = () => {
   return (

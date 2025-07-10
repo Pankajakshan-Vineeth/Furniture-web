@@ -1,0 +1,18 @@
+.shop-banner {
+  background-color: #3e5e53; /* Dark green (sampled from the image) */
+  color: #ffffff;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+  font-family: sans-serif;
+}
+
+.shop-banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 50px;
+        font-family: "Kaushan Script", cursive;
+
+}
