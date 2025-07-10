@@ -50,7 +50,7 @@ const Navigation = () => {
         </div>
         <div className="icons">
           <img src={userIcon} alt="" className="icon1" />
-          <img src={CartIcon} alt="" />
+          <Link to='/cart'><img src={CartIcon} alt="cart" /></Link>
         </div>
       </div>
     </div>

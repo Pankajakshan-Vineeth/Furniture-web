@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
+import Cart from "./Pages/Cart";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const AnimatedRoutes = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </AnimatePresence>
   );
