@@ -1,0 +1,54 @@
+.team-section {
+  padding: 5rem 2rem;
+  background-color: #f8fafa;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: white;
+  padding: 1rem;
+  max-width: 250px;
+  text-align: left;
+}
+
+.team-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.team-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.team-role {
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.team-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.learn-more {
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  color: #000;
+}

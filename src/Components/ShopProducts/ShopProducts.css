@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fdfd;
+}
+.products-section{
+     display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 50px;
+  padding-bottom: 180px;
+}
+
+.crafted-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.product {
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px; 
+}
+
+.product img {
+  width: 240px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.product img:hover{
+  margin-bottom: -5px;
+}
+
+
+.product h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.product .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+/* Hover Box BELOW content */
+
+.hover-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #53af84;
+  width: 80%;
+  padding: 10px 0;
+  border-radius: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* Plus Icon */
+.plus-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+.product:hover .hover-box {
+  opacity: 1;
+  pointer-events: auto;
+}

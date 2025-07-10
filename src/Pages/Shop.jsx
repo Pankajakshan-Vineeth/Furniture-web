@@ -1,11 +1,11 @@
-import React from 'react'
-import Hero from '../Components/Hero/Hero'
 import ShopBanner from '../Components/ShopBanner/ShopBanner'
+import ShopProducts from '../Components/ShopProducts/ShopProducts'
 
 const Shop = () => {
   return (
     <div>
     <ShopBanner/>
+    <ShopProducts/>
     </div>
   )
 }
