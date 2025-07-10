@@ -36,7 +36,13 @@ export default function RecentBlog() {
       <div className="blog-cards">
         {blogPosts.map((post, index) => (
           <div className="blog-card" key={index}>
-            <img src={post.image} className="blog-image" />
+            
+              <img
+                src={post.image}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="blog-image"
+              />
+        
             <h3 className="blog-title">{post.title}</h3>
             <p className="blog-meta">
               by <span className="author">{post.author}</span> on{" "}

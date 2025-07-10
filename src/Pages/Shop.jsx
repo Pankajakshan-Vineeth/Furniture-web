@@ -12,7 +12,7 @@ const Shop = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       <ScrollReveal>
-        <ShopBanner />
+        <ShopBanner heading='Shop'/>
       </ScrollReveal>
       <ScrollReveal delay={0.3}>
         <ShopProducts />

@@ -4,6 +4,7 @@ import CartIcon from "../../assets/cart.svg";
 import './Navigation.css'
 
 const Navigation = () => {
+
   return (
     <div className="nav-main-container">
       <div className="nav-container">

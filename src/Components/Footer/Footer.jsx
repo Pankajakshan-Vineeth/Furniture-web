@@ -21,7 +21,8 @@ export default function Footer() {
             <div className="newsletter-inputs">
               <input type="text" placeholder="Enter your name" />
               <input type="email" placeholder="Enter your email" />
-              <button type="submit">
+              <button type="submit" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
                 <img src={telegram} className="telegram" />
               </button>
             </div>

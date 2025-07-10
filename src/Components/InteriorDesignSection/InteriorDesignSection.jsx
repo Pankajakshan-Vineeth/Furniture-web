@@ -62,7 +62,12 @@ const InteriorDesignSection = () => {
             <li>Donec vitae odio quis nisl dapibus malesuada</li>
           </ul>
 
-          <button className="explore-btn">Explore</button>
+          <button
+            className="explore-btn"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Explore
+          </button>
         </div>
       </div>
 

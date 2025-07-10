@@ -1,4 +1,5 @@
 import "./product.css";
+import { Link } from "react-router-dom";
 import product1 from "../../assets/product-1.png";
 import product2 from "../../assets/product-2.png";
 import product3 from "../../assets/product-3.png";
@@ -39,7 +40,9 @@ const Products = () => {
           Aliquam vulputate velit imperdiet dolor
           <br /> tempor tristique.
         </p>
-        <button>Explore</button>
+        <Link to="/shop">
+          <button>Explore</button>
+        </Link>
       </div>
       <div className="crafted-products">
         {products.map((product, index) => (

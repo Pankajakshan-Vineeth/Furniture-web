@@ -46,7 +46,7 @@ const Team = () => {
             <h3 className="team-name">{member.name}</h3>
             <p className="team-role">{member.role}</p>
             <p className="team-description">{member.description}</p>
-            <a href="#" className="learn-more">
+            <a href="#" className="learn-more" >
               Learn More
             </a>
           </div>

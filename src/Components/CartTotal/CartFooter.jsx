@@ -44,7 +44,7 @@ const CartFooter = () => {
               <td>${(count1 * 49).toFixed(2)}</td>
               <td className="remove-btn">x</td>
             </tr>
-
+\
             <tr>
               <td>
                 <img src={product2} alt="Product 2" className="product-image" />
