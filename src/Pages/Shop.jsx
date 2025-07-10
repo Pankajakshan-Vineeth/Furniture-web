@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import ShopBanner from "../Components/ShopBanner/ShopBanner";
 import ShopProducts from "../Components/ShopProducts/ShopProducts";
-import { motion } from "framer-motion";
+import ScrollReveal from "../Components/ScrollReveal ";
 
 const Shop = () => {
   return (
@@ -10,8 +11,12 @@ const Shop = () => {
       exit={{ opacity: 0, y: -40 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
-      <ShopBanner />
-      <ShopProducts />
+      <ScrollReveal>
+        <ShopBanner />
+      </ScrollReveal>
+      <ScrollReveal delay={0.3}>
+        <ShopProducts />
+      </ScrollReveal>
     </motion.div>
   );
 };
