@@ -1,13 +1,15 @@
-import Hero from '../Components/Hero/Hero'
-import Testimonials from '../Components/Testimonials/Testimonials'
+import BlogCards from "../Components/BlogCards/BlogCards";
+import Hero from "../Components/Hero/Hero";
+import Testimonials from "../Components/Testimonials/Testimonials";
 
 const Blog = () => {
   return (
     <div>
-      <Hero  heading="Blog"/>
-      <Testimonials/>
+      <Hero heading="Blog" />
+      <BlogCards/>
+      <Testimonials />
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
