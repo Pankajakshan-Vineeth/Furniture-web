@@ -1,13 +1,19 @@
-import ShopBanner from '../Components/ShopBanner/ShopBanner'
-import ShopProducts from '../Components/ShopProducts/ShopProducts'
+import ShopBanner from "../Components/ShopBanner/ShopBanner";
+import ShopProducts from "../Components/ShopProducts/ShopProducts";
+import { motion } from "framer-motion";
 
 const Shop = () => {
   return (
-    <div>
-    <ShopBanner/>
-    <ShopProducts/>
-    </div>
-  )
-}
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -40 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+    >
+      <ShopBanner />
+      <ShopProducts />
+    </motion.div>
+  );
+};
 
-export default Shop
+export default Shop;

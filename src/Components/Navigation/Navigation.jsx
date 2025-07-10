@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import userIcon from "../../assets/user.svg";
 import CartIcon from "../../assets/cart.svg";
 import './Navigation.css'
@@ -8,7 +8,7 @@ const Navigation = () => {
     <div className="nav-main-container">
       <div className="nav-container">
         <div className="logo">
-          <h1>Furni.</h1>
+         <Link to='/'><h1>Furni.</h1></Link>
         </div>
         <div className="menu">
           <NavLink
