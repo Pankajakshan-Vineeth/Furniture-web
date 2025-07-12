@@ -2,10 +2,24 @@
     width: 100%;
     overflow: hidden;
     justify-content: space-around;
-    padding: 5px 10px;
+    padding: 0px 10px;
     position: relative;
         background-color: #3b5d50;
 
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 17vh;
+  padding-left: 60px;
+  padding-right: 60px;
+    background-color: #3b5d50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border-radius: 70px;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-container{

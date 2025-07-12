@@ -2,8 +2,24 @@ import { Link, NavLink } from "react-router-dom";
 import userIcon from "../../assets/user.svg";
 import CartIcon from "../../assets/cart.svg";
 import './Navigation.css'
+import { useEffect } from "react";
+
 
 const Navigation = () => {
+
+  useEffect(() => {
+  const handleScroll = () => {
+    const nav = document.querySelector(".nav-container");
+    if (window.scrollY > 50) {
+      nav.classList.add("sticky-nav");
+    } else {
+      nav.classList.remove("sticky-nav");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <div className="nav-main-container">
@@ -16,7 +32,7 @@ const Navigation = () => {
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            <span></span>Home
+            <span ></span>Home
           </NavLink>
           <NavLink
             to="/shop"
