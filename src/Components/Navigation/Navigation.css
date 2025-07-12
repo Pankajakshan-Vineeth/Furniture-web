@@ -93,3 +93,58 @@ cursor: pointer;
     margin-right: 40px;
     width: 20px;
 }
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  .nav-container {
+    display: flex;
+  }
+
+  .menu {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .logo h1 {
+    font-size: 30px;
+    padding-top: 15px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .icon1 {
+    margin-right: 0;
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 16px;
+    padding-bottom: 4px;
+  }
+
+  .logo h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .icons img {
+    width: 20px;
+  }
+
+  .nav-container {
+    padding-bottom: 0;
+  }
+}

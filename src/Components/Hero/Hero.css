@@ -1,3 +1,6 @@
+
+
+
 .hero-container {
     width: 100%;
     height: 90vh;
@@ -164,4 +167,57 @@ cursor: pointer;
 .text-container button:last-of-type:hover {
   background-color: rgba(255,255,255,0.1);
   border-color: white;
+}
+
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .text-container {
+    margin: 0 20px 40px;
+    text-align: center;
+  }
+
+  .text-container h1 {
+    font-size: 36px;
+  }
+
+  .text-container p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .sofa-image-green {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    right: 0;
+    margin-left: 50px;
+  }
+
+  .green-dots {
+    display: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h1 {
+    font-size: 28px;
+  }
+
+  .text-container button {
+    font-size: 16px;
+    padding: 10px 24px;
+    margin-bottom: 10px;
+  }
+
+  .text-container button:last-of-type {
+    margin-right: 0;
+  }
 }

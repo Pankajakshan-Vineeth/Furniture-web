@@ -183,3 +183,98 @@
   font-weight: 300;
   font-weight: 400;
 }
+
+@media (max-width: 768px) {
+  .image-text-container {
+    flex-direction: column;
+    margin: 0 20px;
+    padding-top: 30px;
+    gap: 2rem;
+  }
+
+  .image-grid {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-large,
+  .image-small.top-right,
+  .image-small.bottom-right {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .dot-pattern {
+    display: none;
+  }
+
+  .content {
+    padding-bottom: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .explore-btn {
+    width: 100%;
+  }
+
+  .chair-section {
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chair-card {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container {
+    margin: 0 auto 15px;
+  }
+
+  .chair-card h3 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .features li {
+    font-size: 13px;
+  }
+
+  .explore-btn {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .chair-card p {
+    font-size: 13px;
+  }
+
+  .chair-card a {
+    font-size: 13px;
+  }
+}

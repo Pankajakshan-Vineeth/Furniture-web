@@ -1,15 +1,14 @@
-/* Reset & base styles */
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 60px;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9fdfd;
+  
 }
 
-/* Container */
 .crafted-section {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +22,6 @@ body {
   padding-bottom: 70px;
 }
 
-/* Left Content */
 .crafted-content {
   max-width: 350px;
 }
@@ -54,7 +52,6 @@ body {
   font-size: 16px;
 }
 
-/* Product Grid */
 .crafted-products {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +63,7 @@ body {
 .product {
   text-align: center;
   position: relative;
-  padding-bottom: 60px; /* Give space for hover box */
+  padding-bottom: 60px; 
 }
 
 .product img {
@@ -92,7 +89,6 @@ body {
   color: #1a1a1a;
 }
 
-/* Hover Box BELOW content */
 .hover-box {
   position: absolute;
   left: 50%;
@@ -121,8 +117,53 @@ body {
   cursor: pointer;
 }
 
-/* Show on hover */
 .product:hover .hover-box {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* ------------------ Responsive Styles ------------------ */
+
+@media (max-width: 768px) {
+  .crafted-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 100px;
+  }
+
+  .crafted-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .crafted-products {
+    justify-content: center;
+  }
+
+  .product img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .crafted-content h1 {
+    font-size: 28px;
+  }
+
+  .crafted-content p {
+    font-size: 14px;
+  }
+
+  .crafted-content button {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  .product img {
+    width: 180px;
+  }
+
+  .crafted-products {
+    gap: 20px;
+  }
 }
