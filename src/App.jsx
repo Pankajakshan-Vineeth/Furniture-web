@@ -9,6 +9,7 @@ import Services from "./Pages/Services";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import Cart from "./Pages/Cart";
+import FloatingAssistant from "./Components/FloatingAssistant/FloatingAssistant";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -34,6 +35,7 @@ const App = () => {
       <Navigation />
       <AnimatedRoutes />
       <Footer />
+      <FloatingAssistant />
     </BrowserRouter>
   );
 };
