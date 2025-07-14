@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import userIcon from "../../assets/user.svg";
 import CartIcon from "../../assets/cart.svg";
+import registered from "../../assets/registered-document.png";
 import "./Navigation.css";
 import { useEffect } from "react";
 
@@ -74,8 +75,12 @@ const Navigation = () => {
           </NavLink>
         </div>
         <div className="icons">
-          <img src={userIcon} alt="" className="icon1" />
-          <Link to="/cart">
+          <Link to="/profile" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            <img src={userIcon} alt="" className="icon1" />
+          </Link>
+          <Link
+            to="/cart"
+          >
             <img
               src={CartIcon}
               alt="cart"

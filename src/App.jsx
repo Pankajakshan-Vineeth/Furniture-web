@@ -10,6 +10,7 @@ import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import Cart from "./Pages/Cart";
 import FloatingAssistant from "./Components/FloatingAssistant/FloatingAssistant";
+import LoginSignup from "./Pages/LoginSignup";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const AnimatedRoutes = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path= "/Profile" element={<LoginSignup/>}/>
       </Routes>
     </AnimatePresence>
   );
