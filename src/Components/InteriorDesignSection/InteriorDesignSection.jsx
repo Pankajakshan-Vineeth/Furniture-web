@@ -6,6 +6,8 @@ import Product1 from "../../assets/product-1.png";
 import Product2 from "../../assets/product-2.png";
 import Product3 from "../../assets/product-3.png";
 
+import { motion } from "framer-motion";
+
 const InteriorDesignSection = () => {
   const features = [
     {
@@ -24,12 +26,18 @@ const InteriorDesignSection = () => {
       img: Product3,
     },
   ];
+
   return (
     <div className="section-container">
       <div className="image-text-container">
-        {/* Left Side with Images */}
-
-        <div className="image-grid">
+        {/* Left Image Grid */}
+        <motion.div
+          className="image-grid"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
+        >
           <div className="dot-pattern"></div>
 
           <div className="image image-large">
@@ -43,11 +51,16 @@ const InteriorDesignSection = () => {
           <div className="image image-small bottom-right">
             <img src={imagethree} alt="Stool" />
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right Side with Content */}
-
-        <div className="content">
+        {/* Right Text Content */}
+        <motion.div
+          className="content"
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
+        >
           <h2>We Help You Make Modern Interior Design</h2>
           <p>
             Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis
@@ -68,14 +81,20 @@ const InteriorDesignSection = () => {
           >
             Explore
           </button>
-        </div>
+        </motion.div>
       </div>
 
-      {/* Products section */}
-
+      {/* Chair Product Section */}
       <div className="chair-section">
         {features.map((item, index) => (
-          <div className="chair-card" key={index}>
+          <motion.div
+            className="chair-card"
+            key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <div className="image-container">
               <img src={item.img} alt={item.title} />
             </div>
@@ -84,7 +103,7 @@ const InteriorDesignSection = () => {
               <p>{item.desc}</p>
               <a href="#">Read More</a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
